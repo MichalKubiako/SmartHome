@@ -1,9 +1,9 @@
 package com.competence_week.smarthome.di
 
 import com.competence_week.smarthome.BuildConfig
-import com.competence_week.smarthome.di.NetTimes.TIMEOUT_LIMIT
 import com.competence_week.smarthome.data.net.BaseRetrofit
 import com.competence_week.smarthome.data.net.NetHome
+import com.competence_week.smarthome.di.NetTimes.TIMEOUT_LIMIT
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

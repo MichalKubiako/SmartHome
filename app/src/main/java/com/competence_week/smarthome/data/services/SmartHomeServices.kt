@@ -6,6 +6,7 @@ import com.competence_week.smarthome.utils.verify
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import timber.log.Timber
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -25,14 +26,18 @@ class SmartHomeServices @Inject constructor(
         onFailure: (message: String) -> Unit
     ) {
         CoroutineScope(Dispatchers.IO).launch {
-            with(netHome.getHome()) {
-                if (verify()) {
-                    body()
-                        ?.let { home -> onSuccess(home) }
-                        ?: run { onFailure("Something went wrong...") }
-                } else {
-                    onFailure("Something went wrong...")
+            try {
+                with(netHome.getHome()) {
+                    if (verify()) {
+                        onSuccess(body()!!)
+                    } else {
+                        Timber.e(message())
+                        onFailure(message())
+                    }
                 }
+            } catch (ex: Exception) {
+                Timber.e(ex)
+                ex.message?.let(onFailure)
             }
         }
     }
