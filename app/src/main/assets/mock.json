@@ -1,0 +1,256 @@
+{
+  "id": "1",
+  "ownerName": "Android",
+  "outsideTemperature": 23,
+  "outsideWeather": "SUNNY",
+  "rooms": [
+    {
+      "id": "0",
+      "name": "Livingroom",
+      "background": "https://stylecurator.com.au/wp-content/uploads/2014/10/Timber-beads-on-coffee-table.jpg",
+      "sensor": {
+        "temperature": 24,
+        "humidity": 80,
+        "motion": false
+      },
+      "climateController": {
+        "id": "1",
+        "state": true,
+        "temperature": 24
+      },
+      "lights": [
+        {
+          "id": "0",
+          "name": "Roof 2",
+          "state": false
+        },
+        {
+          "id": "1",
+          "name": "Roof 2",
+          "state": true
+        },
+        {
+          "id": "2",
+          "name": "Roof 3",
+          "state": true
+        },
+        {
+          "id": "3",
+          "name": "Roof 4",
+          "state": false
+        },
+        {
+          "id": "4",
+          "name": "Roof 5",
+          "state": false
+        }
+      ],
+      "devices": [
+        {
+          "id": "0",
+          "name": "TV",
+          "type": "TV",
+          "state": false
+        },
+        {
+          "id": "1",
+          "name": "Laptop",
+          "type": "COMPUTER",
+          "state": false
+        },
+        {
+          "id": "0",
+          "name": "Radio",
+          "type": "RADIO",
+          "state": false
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Bathroom",
+      "background": "https://st.hzcdn.com/simgs/pictures/bathrooms/the-soho-bathroom-finch-interior-design-img~f8c1e4fc0d1a2b78_8-7466-1-31cd667.jpgej",
+      "sensor": {
+        "temperature": 20,
+        "humidity": 90,
+        "motion": false
+      },
+      "climateController": {
+        "id": "1",
+        "state": true,
+        "temperature": 24
+      },
+      "lights": [
+        {
+          "id": "0",
+          "name": "Roof 2",
+          "state": false
+        },
+        {
+          "id": "1",
+          "name": "Roof 2",
+          "state": true
+        },
+        {
+          "id": "2",
+          "name": "Roof 3",
+          "state": true
+        },
+        {
+          "id": "3",
+          "name": "Roof 4",
+          "state": false
+        },
+        {
+          "id": "4",
+          "name": "Roof 5",
+          "state": false
+        }
+      ],
+      "devices": [
+        {
+          "id": "0",
+          "name": "TV",
+          "type": "TV",
+          "state": false
+        },
+        {
+          "id": "1",
+          "name": "Laptop",
+          "type": "COMPUTER",
+          "state": false
+        },
+        {
+          "id": "0",
+          "name": "Radio",
+          "type": "RADIO",
+          "state": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Kitchen",
+      "background": "https://www.thehappyhousie.com/wp-content/uploads/2020/06/3517Estevan-a-16.jpg",
+      "sensor": {
+        "temperature": 20,
+        "humidity": 90,
+        "motion": false
+      },
+      "climateController": {
+        "id": "1",
+        "state": true,
+        "temperature": 24
+      },
+      "lights": [
+        {
+          "id": "0",
+          "name": "Roof 2",
+          "state": false
+        },
+        {
+          "id": "1",
+          "name": "Roof 2",
+          "state": true
+        },
+        {
+          "id": "2",
+          "name": "Roof 3",
+          "state": true
+        },
+        {
+          "id": "3",
+          "name": "Roof 4",
+          "state": false
+        },
+        {
+          "id": "4",
+          "name": "Roof 5",
+          "state": false
+        }
+      ],
+      "devices": [
+        {
+          "id": "0",
+          "name": "TV",
+          "type": "TV",
+          "state": false
+        },
+        {
+          "id": "1",
+          "name": "Laptop",
+          "type": "COMPUTER",
+          "state": false
+        },
+        {
+          "id": "0",
+          "name": "Radio",
+          "type": "RADIO",
+          "state": false
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Bedroom",
+      "background": "http://www.avenuelifestyle.com/wp-content/uploads/2016/03/IMG_3197-550x825.jpg",
+      "sensor": {
+        "temperature": 19,
+        "humidity": 50,
+        "motion": true
+      },
+      "climateController": {
+        "id": "1",
+        "state": true,
+        "temperature": 24
+      },
+      "lights": [
+        {
+          "id": "0",
+          "name": "Roof 2",
+          "state": false
+        },
+        {
+          "id": "1",
+          "name": "Roof 2",
+          "state": true
+        },
+        {
+          "id": "2",
+          "name": "Roof 3",
+          "state": true
+        },
+        {
+          "id": "3",
+          "name": "Roof 4",
+          "state": false
+        },
+        {
+          "id": "4",
+          "name": "Roof 5",
+          "state": false
+        }
+      ],
+      "devices": [
+        {
+          "id": "0",
+          "name": "TV",
+          "type": "TV",
+          "state": false
+        },
+        {
+          "id": "1",
+          "name": "Laptop",
+          "type": "COMPUTER",
+          "state": false
+        },
+        {
+          "id": "0",
+          "name": "Radio",
+          "type": "RADIO",
+          "state": false
+        }
+      ]
+    }
+  ]
+}

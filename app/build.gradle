@@ -69,4 +69,7 @@ dependencies {
 
     // Timber - just for simplify logs https://github.com/JakeWharton/timber
     implementation 'com.jakewharton.timber:timber:5.0.1'
+
+    //Moshi - JSON converter
+    implementation 'com.squareup.moshi:moshi-kotlin:1.14.0'
 }

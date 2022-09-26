@@ -1,6 +1,7 @@
 package com.competence_week.smarthome.data.services
 
 import com.competence_week.smarthome.data.models.Home
+import com.competence_week.smarthome.data.net.MockAPI
 import com.competence_week.smarthome.data.net.NetHome
 import com.competence_week.smarthome.utils.verify
 import kotlinx.coroutines.CoroutineScope
@@ -18,7 +19,8 @@ import javax.inject.Singleton
 
 @Singleton
 class SmartHomeServices @Inject constructor(
-    private val netHome: NetHome
+    private val netHome: NetHome,
+    private val mockAPI: MockAPI
 ) {
 
     fun getRooms(
@@ -38,6 +40,19 @@ class SmartHomeServices @Inject constructor(
             } catch (ex: Exception) {
                 Timber.e(ex)
                 ex.message?.let(onFailure)
+            }
+        }
+    }
+
+    fun getLocalMock(
+        onSuccess: (home: Home) -> Unit,
+        onFailure: (message: String) -> Unit
+    ) {
+        CoroutineScope(Dispatchers.IO).launch {
+            try {
+                mockAPI.getHomeMockAPI()?.let(onSuccess)
+            } catch (ex: Exception) {
+                onFailure(ex.localizedMessage)
             }
         }
     }
